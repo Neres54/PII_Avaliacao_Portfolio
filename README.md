@@ -3,7 +3,7 @@
 👤 Integrante
 Nome: Paulo Germano da Silva Neres
 
-Função: Desenvolvedor Front-end
+Tema: Desenvolvedor Front-end
 
 📝 Descrição do Projeto
 [Insira aqui uma breve descrição sobre o que é o projeto, qual o objetivo principal e as tecnologias utilizadas, como HTML, CSS e JavaScript.]
