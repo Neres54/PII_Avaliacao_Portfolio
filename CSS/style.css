@@ -7,7 +7,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  overflow-x: hidden; /* esconde scroll horizontal indesejado */
+  overflow-x: hidden;
 }
  
 img {
@@ -25,7 +25,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 3rem;
-  padding: 100px 1.5rem 4rem; /* padding-top compensa o header fixo */
+  padding: 100px 1.5rem 4rem; 
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -37,7 +37,7 @@ ul { list-style: none; }
   margin-bottom: 1rem;
 }
  
-.hero-content { flex: 1.1; } /* ocupa um pouco mais de espaço que a imagem */
+.hero-content { flex: 1.1; } 
  
 .hero-sub {
   font-size: clamp(1.1rem, 3vw, 1.5rem);
@@ -55,7 +55,56 @@ ul { list-style: none; }
 .hero-btns {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* se não couber lado a lado, vai para baixo */
+  flex-wrap: wrap; 
 }
+
+header {
+  position: fixed;           
+  top: 0; left: 0; right: 0;
+  z-index: 100;              
+  background: rgba(13,13,13,0.85); 
+  backdrop-filter: blur(12px);     
+  -webkit-backdrop-filter: blur(12px); 
+  border-bottom: 1px solid var(--border);
+}
+ 
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;               /* alinha logo e links lado a lado */
+  align-items: center;         /* centraliza verticalmente */
+  justify-content: space-between; /* logo à esquerda, links à direita */
+}
+ 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* espaço entre os links */
+}
+ 
+.nav-links a {
+  font-size: 0.9rem;
+  font-family: var(--font-head);
+  color: var(--muted);
+  transition: color var(--transition);
+}
+ 
+.nav-links a:hover,
+.nav-links a.active { color: var(--text); } /* link ativo ou com hover */
+ 
+.btn-nav {
+  color: var(--accent) !important;
+  border: 1px solid var(--accent);
+  padding: 0.4rem 1.1rem;
+  border-radius: 99px;
+}
+ 
+.btn-nav:hover {
+  background: var(--accent);
+  color: #0d0d0d !important;
+}
+ 
  
  
