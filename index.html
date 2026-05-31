@@ -1,52 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
- 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paulo Neres | Estudante de Tecnologia</title>
+  <title>Meu Portfólio</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header id="inicio">
-    <nav class="nav-container">
 
-      <a href="#inicio" class="logo"><span class="logo-dot">.</span></a>
-
-      <ul class="nav-links">
+  <!-- CABEÇALHO COM NAVEGAÇÃO -->
+  <header>
+    <nav>
+      <span class="logo">PN</span>
+      <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#contato" class="btn-nav">Contato</a></li>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
     </nav>
   </header>
 
   <main>
- 
-    <section class="hero" id="hero">
- 
-      <div class="hero-content">
-        <p class="hero-tag">✦ Estudante de ADS — IFPI</p>
-        <h1>Olá, sou <span class="highlight">Paulo Neres</span></h1>
-        <h2 class="hero-sub">Desenvolvedor Front-end</h2>
-        <p class="hero-desc">
-          Transformo ideias em experiências digitais com HTML, CSS e JavaScript.
-        </p>
-        <div class="hero-btns">
-          <a href="#projetos" class="btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn-secondary">Fale comigo</a>
-        </div>
+
+    <!-- HERO: primeira seção, apresentação -->
+    <section class="hero">
+      <img src="img/Foto_Portfolio3.png" alt="Foto de perfil">
+      <div>
+        <h1>Olá, sou <span>Paulo Neres</span></h1>
+        <h2>Estudante de ADS — IFPI</h2>
+        <p>Apaixonado por desenvolvimento web. Criando interfaces com HTML e CSS.</p>
+        <a href="#atividades">Ver atividades</a>
+        <a href="#contato">Fale comigo</a>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <article>
+        <p>Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> no IFPI.
+          Tenho interesse em desenvolvimento web e criação de interfaces responsivas.</p>
+        <ul>
+          <li>📍 Piauí</li>
+          <li>🎓 ADS — IFPI</li>
+          <li>💼 Disponível para estágios</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+
+      <!-- Cards de habilidades -->
+      <div class="cards">
+        <article class="card">
+          <h3>HTML5</h3>
+          <p>Estruturação semântica e boas práticas.</p>
+        </article>
+        <article class="card">
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid e responsividade.</p>
+        </article>
+        <article class="card">
+          <h3>JavaScript</h3>
+          <p>Lógica e manipulação do DOM.</p>
+        </article>
+        <article class="card">
+          <h3>Git & GitHub</h3>
+          <p>Versionamento e GitHub Pages.</p>
+        </article>
       </div>
 
-      <div class="hero-img-wrap">
-        <div class="hero-img-border">
-          <img src="img/Foto_Portfolio.png" alt="Foto de Paulo Neres" class="hero-img">
-        </div>
-        <div class="hero-blob"></div>
+      <!-- Tabela de ferramentas -->
+      <h3>Ferramentas</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Ferramenta</th>
+            <th>Categoria</th>
+            <th>Nível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>VS Code</td>
+            <td>Editor</td>
+            <td>Avançado</td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td>Versionamento</td>
+            <td>Intermediário</td>
+          </tr>
+          <tr>
+            <td>Figma</td>
+            <td>Design</td>
+            <td>Básico</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ATIVIDADES -->
+    <section id="atividades">
+      <h2>Atividades</h2>
+      <div class="cards">
+
+        <article class="card">
+          <img src="img/projeto1.png" alt="Trabalho BD II">
+          <span class="card-tag">Banco de Dados</span>
+          <h3>Trabalho BD II</h3>
+          <p>Disciplina: Banco de Dados II — IFPI</p>
+          <a href="https://github.com/PCLira954/trabalhobddois" target="_blank">Ver no GitHub</a>
+        </article>
+
+        <article class="card">
+          <img src="img/projeto2.png" alt="Torre de Hanói">
+          <span class="card-tag">Linguagem C</span>
+          <h3>Torre de Hanói</h3>
+          <p>Disciplina: Estruturas de Dados — IFPI</p>
+          <a href="https://github.com/Neres54/Hanoi" target="_blank">Ver no GitHub</a>
+        </article>
+
+        <article class="card">
+          <img src="img/projeto3.png" alt="U_Playnumbers">
+          <span class="card-tag">JavaScript</span>
+          <h3>U_Playnumbers</h3>
+          <p>Disciplina: Programação — IFPI</p>
+          <a href="https://github.com/Neres54/U_Playnumbers" target="_blank">Ver no GitHub</a>
+        </article>
+
       </div>
- 
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia">
+      <h2>Experiência</h2>
+
+      <article>
+        <h3>2025 · Estágio — KalumTech</h3>
+        <p>Suporte de TI com foco em estrutura de rede e manutenção de computadores.</p>
+      </article>
+
+      <article>
+        <h3>2023 · Ingresso no curso de ADS — IFPI</h3>
+        <p>Início da formação em Análise e Desenvolvimento de Sistemas, com foco em programação, banco de dados e desenvolvimento web.</p>
+      </article>
+
+      <article>
+        <h3>2023 · Primeiro contato com programação</h3>
+        <p>Primeiros passos com lógica de programação e algoritmos utilizando o VisuAlg.</p>
+      </article>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <div class="contato-grid">
+
+        <!-- Informações de contato com logos originais -->
+        <article>
+          <ul class="contato-lista">
+            <li>
+              <!-- Logo Gmail SVG oficial -->
+              <svg class="social-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#EA4335" d="M6 12l18 11L42 12v-2H6z"/>
+                <path fill="#FBBC05" d="M6 12v24h6V20z"/>
+                <path fill="#34A853" d="M42 12v24h-6V20z"/>
+                <path fill="#4285F4" d="M6 36h36V12L24 23 6 12z"/>
+              </svg>
+              <a href="mailto:pauloneres054@gmail.com">pauloneres054@gmail.com</a>
+            </li>
+            <li>
+              <!-- Logo LinkedIn SVG oficial -->
+              <svg class="social-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="8" fill="#0077B5"/>
+                <path fill="white" d="M13 19h5v16h-5zm2.5-7a2.9 2.9 0 110 5.8 2.9 2.9 0 010-5.8zM22 19h5v2.2c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.1 3.4 6.1 7.9V35h-5v-7.7c0-1.8 0-4.2-2.6-4.2s-3 2-3 4.1V35h-5V19z"/>
+              </svg>
+              <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <!-- Logo GitHub SVG oficial -->
+              <svg class="social-icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#24292e" d="M24 4C12.95 4 4 12.95 4 24c0 8.84 5.73 16.33 13.67 18.97.99.18 1.36-.43 1.36-.96 0-.47-.02-2.03-.03-3.68-5.54 1.2-6.71-2.37-6.71-2.37-.91-2.3-2.21-2.92-2.21-2.92-1.81-1.23.14-1.21.14-1.21 2 .14 3.05 2.05 3.05 2.05 1.77 3.04 4.65 2.16 5.79 1.65.18-1.28.69-2.16 1.26-2.66-4.42-.5-9.07-2.21-9.07-9.84 0-2.17.78-3.95 2.04-5.34-.2-.5-.88-2.52.2-5.26 0 0 1.67-.53 5.46 2.03A19.1 19.1 0 0124 13.2c1.68.01 3.38.23 4.96.67 3.79-2.56 5.46-2.03 5.46-2.03 1.08 2.74.4 4.76.2 5.26 1.27 1.39 2.04 3.17 2.04 5.34 0 7.65-4.66 9.33-9.1 9.82.72.62 1.35 1.83 1.35 3.7 0 2.67-.02 4.82-.02 5.47 0 .53.36 1.15 1.37.96C38.28 40.32 44 32.84 44 24 44 12.95 35.05 4 24 4z"/>
+              </svg>
+              <a href="https://github.com/Neres54" target="_blank">github.com/Neres54</a>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Formulário -->
+        <article>
+          <form action="https://formspree.io/f/xqejvzae" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem..." required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>Desenvolvido por Paulo Neres &copy; 2025 — IFPI · ADS</p>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#atividades">Atividades</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // =============================================
+    // ANIMAÇÃO DE ENTRADA DAS SEÇÕES AO ROLAR
+    // Elementos aparecem suavemente ao entrar na tela
+    // =============================================
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visivel');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.card, article, .timeline-item').forEach(el => {
+      el.classList.add('invisivel');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
