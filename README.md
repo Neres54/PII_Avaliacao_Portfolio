@@ -65,7 +65,7 @@ Como o trabalho foi realizado individualmente, fui responsável por todas as eta
 
 - **GitHub Pages:** https://neres54.github.io/PII_Avaliacao_Portfolio
 - **Repositório:** https://github.com/Neres54/PII_Avaliacao_Portfolio
-- **Vídeo de apresentação:** *(em breve)*
+- **Vídeo de apresentação: https://drive.google.com/file/d/1kkpDYCLo8MR0c7R93EuxoTBydpceqxyu/view?usp=sharing
 
 ---
 
