@@ -33,6 +33,9 @@ body {
   line-height: 1.6;
 }
 
+/* Rolagem suave ao clicar nos links de navegação */
+html { scroll-behavior: smooth; }
+
 a {
   color: var(--laranja);
   text-decoration: none;
